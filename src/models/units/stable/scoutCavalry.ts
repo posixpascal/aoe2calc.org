@@ -4,7 +4,7 @@ import {StableUnit} from "../stableUnit";
 
 export class ScoutCavalry extends StableUnit {
     public label = "Scout Cavalry";
-    public name = "scout";
+    public name = "scoutCavalry";
     public creationTime = 30;
     public icon = "064_50730";
     public baseCost: IResourceSet = {
