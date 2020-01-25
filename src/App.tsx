@@ -51,12 +51,12 @@ function App() {
                     subTitle={
                         <Tag color="blue">alpha</Tag>
                     }
-                    extra={[
+                    extra={/*[
                         <Button key="1" type="primary">
                             New Sheet
                         </Button>,
                         <Button key="2">Share</Button>,
-                    ]}
+                    ]*/}
                 >
                 </PageHeader>
                 <MenuBar/>
