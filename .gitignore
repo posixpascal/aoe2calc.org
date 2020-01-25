@@ -6,6 +6,8 @@ game_assets/*
 /.pnp
 .pnp.js
 
+.idea/
+
 # testing
 /coverage
 
