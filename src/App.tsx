@@ -8,7 +8,7 @@ import {HeaderBar} from "./components/headerBar";
 import {
     BrowserRouter as Router,
     Route,
-    Redirect,
+    Redirect, HashRouter,
 } from "react-router-dom";
 import MenuBar from "./components/menuBar";
 import {Wrapper} from "./styles/wrapper";
@@ -41,7 +41,7 @@ function App() {
     };
 
     return (
-        <Router>
+        <HashRouter>
             <div className="App">
                 <PageHeader
                     style={{
@@ -51,12 +51,6 @@ function App() {
                     subTitle={
                         <Tag color="blue">alpha</Tag>
                     }
-                    extra={/*[
-                        <Button key="1" type="primary">
-                            New Sheet
-                        </Button>,
-                        <Button key="2">Share</Button>,
-                    ]*/}
                 >
                 </PageHeader>
                 <MenuBar/>
@@ -76,7 +70,7 @@ function App() {
                     </Route>
                 </Wrapper>
             </div>
-        </Router>
+        </HashRouter>
     );
 }
 
