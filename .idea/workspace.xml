@@ -1,10 +1,355 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c30cf314-ebb4-40cf-9f1a-48c036aa6f58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/build_assets.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/game_assets/resources/resource_food.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/game_assets/resources/resource_food_transparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/game_assets/resources/resource_gold.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/game_assets/resources/resource_gold_transparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/game_assets/resources/resource_stone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/game_assets/resources/resource_stone_transparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/game_assets/resources/resource_wood.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/game_assets/resources/resource_wood_transparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ageIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/agePicker.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/buildingIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/calculator.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/calculatorRow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/civIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/civPicker.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/headerBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menuBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/resourceIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/resourcesList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/settings.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/startingResourcesPicker.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/teamPicker.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/totalResourcesNeeded.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/unitIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/unitPicker.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/units.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/villagerRequirements.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interface.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/age.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ageManager.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ages/castleAge.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ages/darkAge.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ages/feudalAge.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ages/imperialAge.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/building.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/buildingManager.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/buildings/archeryRange.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/buildings/barrack.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/buildings/castle.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/buildings/dock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/buildings/krepost.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/buildings/market.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/buildings/monastery.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/buildings/siegeWorkshop.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/buildings/stable.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/buildings/townCenter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civilization.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civilizationManager.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/aztecs.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/berbers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/britons.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/bulgarians.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/burmese.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/byzantines.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/celts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/chinese.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/cumans.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/ethiopians.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/goths.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/huns.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/incas.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/indians.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/italians.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/japanese.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/khmer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/koreans.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/lithuanians.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/magyars.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/malay.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/malians.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/mayans.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/mongols.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/persians.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/portuguese.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/saracens.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/slavs.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/spanish.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/tatars.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/teutons.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/turks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/civs/vietnamese.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/unit.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/unitManager.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/archeryRange/arbalest.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/archeryRange/archer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/archeryRange/cavalryArcher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/archeryRange/crossbowman.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/archeryRange/eliteGenitour.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/archeryRange/eliteSkirmisher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/archeryRange/genitour.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/archeryRange/handCannoneer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/archeryRange/heavyCavalryArcher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/archeryRange/imperialSkirmisher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/archeryRange/skirmisher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/archeryRange/slinger.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/archeryRangeUnit.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/barrack/champion.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/barrack/condottiero.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/barrack/eagleScout.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/barrack/eagleWarrior.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/barrack/eliteEagleWarrior.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/barrack/halberdier.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/barrack/longSwordsman.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/barrack/manAtArms.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/barrack/militia.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/barrack/pikeman.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/barrack/spearman.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/barrack/twoHandedSwordsman.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/barrackUnit.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/arambai.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/ballistaElephant.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/berserk.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/boyar.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/camelArcher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/cataphract.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/chuKoNu.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/conquistador.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elephantArcher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteArambai.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteBallistaElephant.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteBerserk.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteBoyar.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteCamelArcher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteCataphract.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteChuKoNu.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteConquistador.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteElephantArcher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteGbeto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteGenoeseCrossbowman.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteHuskarl.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteJaguarWarrior.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteJanissary.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteKamayuk.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteKarambitWarrior.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteLongbowman.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteMagyarHuszar.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteMameluke.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteMangudai.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteOrganGun.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/elitePlumedArcher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteRattanArcher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteSamurai.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteShotelWarrior.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteTarkan.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteTeutonicKnight.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteThrowingAxeman.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteWarElephant.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteWarWagon.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/elite/eliteWoadRaider.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/gbeto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/genoeseCrossbowman.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/huskarl.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/jaguarWarrior.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/janissary.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/kamayuk.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/karambitWarrior.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/longbowman.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/magyarHuszar.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/mameluke.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/mangudai.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/organGun.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/petard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/plumedArcher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/rattanArcher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/samurai.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/shotelWarrior.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/tarkan.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/teutonicKnight.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/throwingAxeman.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/trebuchet.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/warElephant.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/warWagon.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castle/woadRaider.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/castleUnit.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/cannonGalleon.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/caravel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/demolitionRaft.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/demolitionShip.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/eliteCannonGalleon.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/eliteCaravel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/eliteLongboat.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/eliteTurtleship.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/fastFireShip.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/fireGalley.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/fireShip.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/fishingShip.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/galleon.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/galley.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/heavyDemolitionShip.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/longboat.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/tradeCog.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/transportShip.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/turtleShip.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dock/warGalley.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/dockUnit.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/market/tradeCart.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/marketUnit.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/monastery/missionary.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/monastery/monk.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/monasteryUnit.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/siegeWorkshop/batteringRam.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/siegeWorkshop/bombardCannon.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/siegeWorkshop/cappedRam.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/siegeWorkshop/heavyScorpion.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/siegeWorkshop/mangonel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/siegeWorkshop/onager.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/siegeWorkshop/scorpion.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/siegeWorkshop/siegeOnager.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/siegeWorkshop/siegeRam.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/siegeWorkshop/siegeTower.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/siegeWorkshopUnit.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/stable/battleElephant.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/stable/camel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/stable/cavalier.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/stable/eliteBattleElephant.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/stable/heavyCamel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/stable/hussar.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/stable/imperialCamel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/stable/knight.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/stable/lightCavalry.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/stable/paladin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/stable/scoutCavalry.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/stableUnit.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/townCenter/villager.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/units/townCenterUnit.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/paddedTop.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/wrapper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1WrGwj1AvKMhyRHHEZrWmRYRtWo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/models/units/castle" />
+      <recent name="$PROJECT_DIR$/src/models/units/dock" />
+      <recent name="$PROJECT_DIR$/src/models/units/townCenter" />
+      <recent name="$PROJECT_DIR$/src/models/units/barrack" />
+      <recent name="$PROJECT_DIR$/src/models/units/market" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/models/units" />
+      <recent name="$PROJECT_DIR$/src/models/buildings" />
+      <recent name="$PROJECT_DIR$/src/models" />
+      <recent name="$PROJECT_DIR$/src/models/civs" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c30cf314-ebb4-40cf-9f1a-48c036aa6f58" name="Default Changelist" comment="" />
+      <created>1579900540978</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579900540978</updated>
+      <workItem from="1579900542593" duration="39452000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="660" y="365" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579918094451">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="660" y="365" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1057@0.23.1920.1057" timestamp="1579918094451" />
+    <state x="667" y="405" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579903619309">
+      <screen x="0" y="23" width="2048" height="1257" />
+    </state>
+    <state x="667" y="405" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2048.1257@0.23.2048.1257" timestamp="1579903619309" />
+    <state x="883" y="478" key="NewPhpFileDialog" timestamp="1579960605618">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="883" y="478" key="NewPhpFileDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1579960605618" />
+    <state x="1304" y="507" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579965022703">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1304" y="507" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1057@0.23.1920.1057" timestamp="1579965022703" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1579971844089">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1579971844089" />
+    <state x="724" y="292" width="670" height="676" key="search.everywhere.popup" timestamp="1579964202272">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="724" y="292" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1579964202272" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/models/units/townCenter/villager.ts</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

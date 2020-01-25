@@ -1,14 +1,25 @@
 {
   "name": "aoe-calc",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Calculate how many villagers you need to provide an endless stream of units from X production buildings.",
+  "main": "scripts/start.js",
+  "repository": "https://github.com/posixpascal/aoe-calc",
+  "author": "Pascal Raszyk <posixpascal@googlemail.com>",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/react-router-dom": "^5.1.3",
+    "@types/styled-components": "^4.4.2",
+    "antd": "^3.26.7",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0",
+    "styled-components": "^5.0.0",
+    "typescript": "^3.7.5"
   },
   "scripts": {
     "start": "react-scripts start",
