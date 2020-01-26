@@ -20,6 +20,7 @@ export type ICivilization = "britons" | "byzantines" | "celts" | "chinese" | "go
 export interface ISettings {
     civilization: Civilization;
     startingResources: IResourceSet,
+    preferRounding: boolean;
     startingAge: Age,
     isNomadStart: boolean,
     isAllTech: boolean,

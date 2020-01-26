@@ -12,9 +12,10 @@ import {VillagerRequirements} from "./villagerRequirements";
 
 interface ITotalResourcesNeeded {
     rows: any;
+    rounding?:boolean;
 }
 
-export const TotalResourcesNeeded = ({rows = {}}: ITotalResourcesNeeded) => {
+export const TotalResourcesNeeded = ({rounding = true, rows = {}}: ITotalResourcesNeeded) => {
     const totalBaseCost : any = {};
 
     rows.forEach((row:any) => {
@@ -35,7 +36,7 @@ export const TotalResourcesNeeded = ({rows = {}}: ITotalResourcesNeeded) => {
     return <div style={{marginTop: "50px", marginBottom: "15px"}}>
         <Descriptions title={<>To sustain permanent production of {units} — You'll need to put</>}>
             <Descriptions.Item>
-                <VillagerRequirements resources={totalBaseCost} multiplier={1} />
+                <VillagerRequirements rounding={rounding} resources={totalBaseCost} multiplier={1} />
             </Descriptions.Item>
         </Descriptions>
     </div>

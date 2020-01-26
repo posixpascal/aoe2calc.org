@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import "./App.css";
-import {Button, PageHeader, Tag} from "antd";
+import {Button, Icon, PageHeader, Switch, Tag} from "antd";
 import {DEFAULT_SETTINGS} from "./config";
 import {Settings} from "./components/settings";
 import {Calculator} from "./components/calculator";
@@ -18,6 +18,9 @@ import {Units} from "./components/units";
 function App() {
     const [settings, setSettings] = useState(DEFAULT_SETTINGS);
 
+    const toggleRounding = () => {
+        setSettings({...settings, preferRounding: !settings.preferRounding});
+    };
 
     const addRow = () => {
         setSettings({...settings, calculatorRows: [...settings.calculatorRows, {
@@ -51,6 +54,13 @@ function App() {
                     subTitle={
                         <Tag color="blue">alpha</Tag>
                     }
+                    extra={<>
+                        round numbers <Switch
+                        checkedChildren={<Icon type="check" />}
+                        unCheckedChildren={<Icon type="close" />}
+                        defaultChecked={settings.preferRounding}
+                        onChange={toggleRounding}
+                    /></>}
                 >
                 </PageHeader>
                 <MenuBar/>

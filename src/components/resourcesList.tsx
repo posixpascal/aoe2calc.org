@@ -8,13 +8,15 @@ import {ResourceIcon} from "./resourceIcon";
 interface IResourcesListComponent {
     resources: IResourceSet;
     multiplier?: number;
+    rounding? :boolean;
 }
 
-export const ResourcesList = ({multiplier = 1, resources}: IResourcesListComponent) => {
+export const ResourcesList = ({rounding = true, multiplier = 1, resources}: IResourcesListComponent) => {
     return <>
         {Object.keys(resources).map((resName: any) => {
+            const resAmount = rounding ? Math.ceil((resources as any)[resName] * multiplier) : (resources as any)[resName] * multiplier;
             return <span key={resName} style={{paddingRight: "3px", paddingLeft: "3px"}}><ResourceIcon inline={true} resource={resName} size={16}/>
-                {Math.ceil((resources as any)[resName] * multiplier)}</span>
+                {resAmount}</span>
         })}
     </>
 };

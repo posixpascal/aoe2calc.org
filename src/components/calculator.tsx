@@ -37,7 +37,7 @@ export const Calculator = ({settings, updateRow, deleteRow, addRow}: ICalculator
             })}
             <Button onClick={addRow} type="primary">Add Unit</Button>
             <Divider />
-            <TotalResourcesNeeded rows={rows} />
+            <TotalResourcesNeeded rounding={settings.preferRounding} rows={rows} />
         </div>}
 
     </PaddedTop>

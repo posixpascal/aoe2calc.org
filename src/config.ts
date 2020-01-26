@@ -4,6 +4,7 @@ import {AgeManager} from "./models/ageManager";
 
 export const DEFAULT_SETTINGS : ISettings = {
     civilization: CivilizationManager.byName("aztecs"),
+    preferRounding: true,
     startingResources: {
         'food': 300,
         'wood': 200,
