@@ -36,9 +36,13 @@ export const CalculatorRow = ({onUpdate, onDelete, settings, row = {}}: ICalcula
     </Button>);
     return <div style={{marginTop: "50px", marginBottom: "15px"}}>
         <Descriptions bordered title={
-            <>{cardExtra} To permanently create <Tag color="blue"><UnitIcon unit={row.unit} size={16}/> {row.unit.label} </Tag>
-                 from &nbsp;<Tag color={"blue"}> <BuildingIcon building={row.unit.building} size={16} /> {row.production} {pluralize(row.unit.building.name, row.production)} </Tag>
-                you need <VillagerRequirements resources={row.unit.baseCost} multiplier={(1 * row.production) / row.unit.creationTime}/>
+            <>{cardExtra} To permanently create &nbsp;<Tag color="blue"><UnitIcon unit={row.unit} size={16}/> {row.unit.label}
+            </Tag>
+                from &nbsp;<Tag color={"blue"}> <BuildingIcon building={row.unit.building}
+                                                              size={16}/> {row.production} {pluralize(row.unit.building.name, row.production)}
+                </Tag>you need &nbsp;<Tag color={"blue"}><VillagerRequirements padding={false} collectionRate={false} iconSize={16}
+                                                                   resources={row.unit.baseCost}
+                                                                   multiplier={(1 * row.production) / row.unit.creationTime}/></Tag>
             </>
         }>
             <Descriptions.Item label="Unit">
@@ -54,7 +58,8 @@ export const CalculatorRow = ({onUpdate, onDelete, settings, row = {}}: ICalcula
                 <Divider/>
                 {row.production > 0 && <div>
                     {row.production}x <UnitIcon unit={row.unit} size={24}/>
-                    <strong>{row.unit.label}</strong> = <ResourcesList rounding={settings.preferRounding} resources={row.unit.baseCost}
+                    <strong>{row.unit.label}</strong> = <ResourcesList rounding={settings.preferRounding}
+                                                                       resources={row.unit.baseCost}
                                                                        multiplier={(1 * row.production) / row.unit.creationTime}/> per
                     second
                     <span style={{padding: "0 10px"}}>/</span><span style={{color: "#999"}}><ResourcesList
@@ -63,7 +68,8 @@ export const CalculatorRow = ({onUpdate, onDelete, settings, row = {}}: ICalcula
                 </div>}
             </Descriptions.Item>
             <Descriptions.Item label={"To sustain put"}>
-                <VillagerRequirements rounding={settings.preferRounding} resources={row.unit.baseCost} multiplier={(1 * row.production) / row.unit.creationTime}/>
+                <VillagerRequirements rounding={settings.preferRounding} resources={row.unit.baseCost}
+                                      multiplier={(1 * row.production) / row.unit.creationTime}/>
             </Descriptions.Item>
         </Descriptions>
     </div>

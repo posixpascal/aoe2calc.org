@@ -11,9 +11,12 @@ interface IVillagerRequirementsComponent {
     resources: IResourceSet;
     multiplier?: number;
     rounding?: boolean;
+    iconSize?: number;
+    collectionRate?:boolean;
+    padding?:boolean;
 }
 
-export const VillagerRequirements = ({rounding = true, multiplier = 1, resources}: IVillagerRequirementsComponent) => {
+export const VillagerRequirements = ({padding = true, iconSize=24, collectionRate=true,rounding = true, multiplier = 1, resources}: IVillagerRequirementsComponent) => {
     const villagerUnit : Villager = UnitManager.byName("villager") as Villager;
     return <>
         {Object.keys(resources).map((resName: any) => {
@@ -21,9 +24,9 @@ export const VillagerRequirements = ({rounding = true, multiplier = 1, resources
             const numVillsDecimal = targetNumber / villagerUnit.gatherRateOf(resName);
             const numVills = rounding ? Math.round(numVillsDecimal) : numVillsDecimal.toFixed(2);
 
-            return <span key={resName} style={{paddingRight: "8px", paddingLeft: "8px"}}>
-                <UnitIcon unit={villagerUnit} size={24}/>
-                <strong style={{paddingLeft: "4px"}}>{numVills}</strong> on <ResourceIcon inline={true} resource={resName} size={16}/> {capitalize(resName)} (<Tooltip title={"Collection Rate"}>{villagerUnit.gatherRateOf(resName)}/s</Tooltip>)
+            return <span key={resName} style={padding ? {paddingRight: "8px", paddingLeft: "8px"}: {}}>
+                <UnitIcon unit={villagerUnit} size={iconSize}/>
+                <strong style={{paddingLeft: "4px"}}>{numVills}</strong> on <ResourceIcon inline={true} resource={resName} size={16}/> {capitalize(resName)} {collectionRate && <>(<Tooltip title={"Collection Rate"}>{villagerUnit.gatherRateOf(resName)}/s</Tooltip>)</>}
                 </span>
         })}
     </>
